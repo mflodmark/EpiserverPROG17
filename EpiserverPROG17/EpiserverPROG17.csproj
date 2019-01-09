@@ -228,10 +228,24 @@
     <Folder Include="Models\Media\" />
     <Folder Include="Models\Pages\" />
     <Folder Include="Models\Properties\" />
-    <Folder Include="Static\" />
     <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Static\css\bootstrap.css" />
+    <Content Include="Static\css\bootstrap.min.css" />
+    <Content Include="Static\css\landing-page.css" />
+    <Content Include="Static\font-awesome\css\font-awesome.css" />
+    <Content Include="Static\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Static\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Static\img\banner-bg.jpg" />
+    <Content Include="Static\img\dog.jpg" />
+    <Content Include="Static\img\intro-bg.jpg" />
+    <Content Include="Static\img\ipad.jpg" />
+    <Content Include="Static\img\phones.jpg" />
+    <Content Include="Static\js\bootstrap.js" />
+    <Content Include="Static\js\bootstrap.min.js" />
+    <Content Include="Static\js\jquery.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -244,6 +258,40 @@
     <Content Include="modules\_protected\EPiServer.Cms.TinyMce\web.config" />
     <Content Include="modules\_protected\EPiServer.Cms.TinyMce\EPiServer.Cms.TinyMce.zip" />
     <None Include="packages.config" />
+    <Content Include="Static\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Static\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Static\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Static\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Static\font-awesome\less\bordered-pulled.less" />
+    <Content Include="Static\font-awesome\less\core.less" />
+    <Content Include="Static\font-awesome\less\fixed-width.less" />
+    <Content Include="Static\font-awesome\less\font-awesome.less" />
+    <Content Include="Static\font-awesome\less\icons.less" />
+    <Content Include="Static\font-awesome\less\larger.less" />
+    <Content Include="Static\font-awesome\less\list.less" />
+    <Content Include="Static\font-awesome\less\mixins.less" />
+    <Content Include="Static\font-awesome\less\path.less" />
+    <Content Include="Static\font-awesome\less\rotated-flipped.less" />
+    <Content Include="Static\font-awesome\less\spinning.less" />
+    <Content Include="Static\font-awesome\less\stacked.less" />
+    <Content Include="Static\font-awesome\less\variables.less" />
+    <Content Include="Static\font-awesome\scss\font-awesome.scss" />
+    <Content Include="Static\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Static\font-awesome\scss\_core.scss" />
+    <Content Include="Static\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Static\font-awesome\scss\_icons.scss" />
+    <Content Include="Static\font-awesome\scss\_larger.scss" />
+    <Content Include="Static\font-awesome\scss\_list.scss" />
+    <Content Include="Static\font-awesome\scss\_mixins.scss" />
+    <Content Include="Static\font-awesome\scss\_path.scss" />
+    <Content Include="Static\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Static\font-awesome\scss\_spinning.scss" />
+    <Content Include="Static\font-awesome\scss\_stacked.scss" />
+    <Content Include="Static\font-awesome\scss\_variables.scss" />
+    <Content Include="Static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Static\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
