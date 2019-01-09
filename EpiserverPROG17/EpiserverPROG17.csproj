@@ -228,7 +228,6 @@
     <Folder Include="Models\Media\" />
     <Folder Include="Models\Pages\" />
     <Folder Include="Models\Properties\" />
-    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Static\css\bootstrap.css" />
@@ -292,6 +291,8 @@
     <Content Include="Static\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Static\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Static\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Views\Shared\Layouts\_Root.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
