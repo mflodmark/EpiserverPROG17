@@ -1,6 +1,7 @@
 ﻿using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
+using EpiserverPROG17.Models.Blocks;
 using System.ComponentModel.DataAnnotations;
 
 namespace EpiserverPROG17.Models.Pages
@@ -21,7 +22,7 @@ namespace EpiserverPROG17.Models.Pages
             Order = 150)]
         public virtual XhtmlString MainBody { get; set; }
 
-        //public virtual EmployeeBlock Author { get; set; }
+        public virtual EmployeeBlock Author { get; set; }
 
     }
 }

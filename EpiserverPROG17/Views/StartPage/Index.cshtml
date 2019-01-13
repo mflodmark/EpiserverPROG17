@@ -16,7 +16,7 @@
                     <h1 @Html.EditAttributes(m => m.Heading)>
                         @(Model.Heading ?? Model.Name)
                     </h1>
-                    @Html.PropertyFor(m => m.Description)
+                    <h3>@Html.DisplayFor(m => m.Description)</h3>
                     <hr class="intro-divider">
                     <ul class="list-inline intro-social-buttons">
                         <li>

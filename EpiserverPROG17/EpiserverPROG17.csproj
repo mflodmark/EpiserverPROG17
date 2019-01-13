@@ -224,6 +224,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Blocks\EmployeeBlock.cs" />
     <Compile Include="Models\Blocks\ImageLeftBlock.cs" />
     <Compile Include="Models\Blocks\ImageRightBlock.cs" />
     <Compile Include="Models\Media\ImageFile.cs" />
@@ -236,7 +237,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\Properties\" />
-    <Folder Include="Views\ImageLeftBlock\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Static\css\bootstrap.css" />
@@ -305,6 +305,8 @@
     <Content Include="Views\StartPage\Index.cshtml" />
     <Content Include="Views\Shared\_NavigationMenu.cshtml" />
     <Content Include="Views\ImageRightBlock\Index.cshtml" />
+    <Content Include="Views\ImageLeftBlock\Index.cshtml" />
+    <Content Include="Views\Shared\EmployeeBlock.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

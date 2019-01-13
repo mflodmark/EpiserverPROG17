@@ -1,7 +1,10 @@
-﻿using EPiServer.Core;
+﻿using EPiServer;
+using EPiServer.Cms.Shell.Json.Internal;
+using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 using EPiServer.Web;
+using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 
 namespace EpiserverPROG17.Models.Blocks
@@ -24,8 +27,10 @@ namespace EpiserverPROG17.Models.Blocks
         [Display(Name = "Rich text before link", Order = 20)]
         public virtual XhtmlString Text { get; set; }
 
-        [Display(Name = "Link(url)", Order = 40, GroupName = SystemTabNames.PageHeader)]
-        public virtual string Link { get; set; }
+        [Display(Name = "Link", Order = 40, GroupName = SystemTabNames.PageHeader)]
+        [JsonProperty]
+        [JsonConverter(typeof(UrlConverter))]
+        public virtual Url Link { get; set; }
 
         [Display(Name = "Link text", Order = 45, GroupName = SystemTabNames.PageHeader)]
         public virtual string LinkText { get; set; }
