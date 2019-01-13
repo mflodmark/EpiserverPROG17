@@ -1,0 +1,32 @@
+﻿@model EpiserverPROG17.Models.Blocks.ImageRightBlock
+
+<!-- Page Content -->
+
+<a name="services"></a>
+<div class="content-section-a">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">
+                    @Html.DisplayFor(x => x.Heading)
+                    <br>
+                    @Html.DisplayFor(x => x.Heading2)
+                </h2>
+                @Html.PropertyFor(x => x.Text, new { CssClass = "lead" })
+                <a target="_blank" href="@Html.DisplayFor(x => x.Link)">
+                    @Html.DisplayFor(x => x.LinkText)
+                </a>
+                @Html.PropertyFor(x => x.Text2, new { CssClass = "lead" })
+            </div>
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <img class="img-responsive" src="@Url.ContentUrl(Model.Image)" alt="">
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.content-section-a -->
