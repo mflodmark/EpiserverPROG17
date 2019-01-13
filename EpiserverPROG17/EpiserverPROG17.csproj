@@ -223,9 +223,12 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Media\ImageFile.cs" />
+    <Compile Include="Models\Pages\SitePageData.cs" />
+    <Compile Include="Models\Pages\StandardPage.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SiteGroupNames.cs" />
+    <Compile Include="SiteTabNames.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\Blocks\" />

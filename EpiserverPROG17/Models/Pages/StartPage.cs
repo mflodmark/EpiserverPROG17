@@ -69,13 +69,14 @@ namespace EpiserverPROG17.Models.Pages
         //        Order = 1)]
         //    public virtual XhtmlString MainBody { get; set; }
 
-        //    [CultureSpecific]
-        //    [Display(Name = "Main content area",
-        //Description = "Drag and drop images, blocks, folders, and pages with partial templates.",
-        //GroupName = SystemTabNames.Content, Order = 30)]
-        //    [AllowedTypes(typeof(StandardPage), typeof(BlockData),
-        //typeof(ImageData), typeof(ContentFolder))]
-        //    public virtual ContentArea MainContentArea { get; set; }
+        [CultureSpecific]
+        [Display(
+            Name = "Main content area",
+            Description = "Drag and drop images, blocks, folders, and pages with partial templates.",
+            GroupName = SystemTabNames.Content, Order = 200)]
+        [AllowedTypes(typeof(StandardPage), typeof(BlockData),
+            typeof(ImageData), typeof(ContentFolder))]
+        public virtual ContentArea MainContentArea { get; set; }
 
     }
 }
