@@ -1,0 +1,21 @@
+﻿@using EpiserverPROG17.Business.ExtensionMethods
+@using EPiServer.Core
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="list-inline">
+                    <li>@Html.ContentLink(ContentReference.StartPage)</li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    @Html.MenuList(ContentReference.StartPage,
+                                    @<li class="@(item.Selected ? "active" : null)">
+                                        @Html.PageLink(item.Page)
+                                    </li>)
+                </ul>
+                @Html.RenderFooterText()
+            </div>
+        </div>
+    </div>
+</footer>

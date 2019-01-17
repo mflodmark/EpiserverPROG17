@@ -1,0 +1,12 @@
+﻿@model EpiserverPROG17.Models.Blocks.EmployeeBlock
+<div class="block span">
+    <p>
+        <span style="font-size: 20px">
+            @Html.DisplayFor(x => x.FirstName)
+            @Html.DisplayFor(x => x.LastName)
+        </span>
+        was hired
+        @Html.DisplayFor(x => x.HireDate)
+    </p>
+    @Html.DisplayFor(x => x.Description)
+</div> 

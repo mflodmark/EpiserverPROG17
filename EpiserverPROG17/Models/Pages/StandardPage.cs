@@ -1,7 +1,6 @@
 ﻿using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
-using EpiserverPROG17.Models.Blocks;
 using System.ComponentModel.DataAnnotations;
 
 namespace EpiserverPROG17.Models.Pages
@@ -22,7 +21,14 @@ namespace EpiserverPROG17.Models.Pages
             Order = 150)]
         public virtual XhtmlString MainBody { get; set; }
 
-        public virtual EmployeeBlock Author { get; set; }
+        [CultureSpecific]
+        [Display(
+            Name = "Main content area",
+            Description = "Drag and drop images, blocks, folders, and pages with partial templates.",
+            GroupName = SystemTabNames.Content, Order = 200)]
+        [AllowedTypes(typeof(StandardPage), typeof(BlockData),
+            typeof(ImageData), typeof(ContentFolder))]
+        public virtual ContentArea MainContentArea { get; set; }
 
     }
 }

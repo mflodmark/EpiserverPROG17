@@ -218,13 +218,18 @@
   <ItemGroup>
     <Compile Include="Business\ExtensionMethods\ContentExtensions.cs" />
     <Compile Include="Business\ExtensionMethods\HtmlHelperExtensions.cs" />
+    <Compile Include="Business\ExtensionMethods\LayoutExtensionMethods.cs" />
+    <Compile Include="Controllers\EmployeeBlockController.cs" />
+    <Compile Include="Controllers\FooterBlockController.cs" />
     <Compile Include="Controllers\ImageLeftBlockController.cs" />
     <Compile Include="Controllers\ImageRightBlockController.cs" />
+    <Compile Include="Controllers\StandardPageController.cs" />
     <Compile Include="Controllers\StartPageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Blocks\EmployeeBlock.cs" />
+    <Compile Include="Models\Blocks\FooterBlock.cs" />
     <Compile Include="Models\Blocks\ImageLeftBlock.cs" />
     <Compile Include="Models\Blocks\ImageRightBlock.cs" />
     <Compile Include="Models\Media\ImageFile.cs" />
@@ -237,11 +242,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\Properties\" />
+    <Folder Include="Views\FooterBlock\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Static\css\bootstrap.css" />
     <Content Include="Static\css\bootstrap.min.css" />
     <Content Include="Static\css\landing-page.css" />
+    <Content Include="Static\css\site.css" />
     <Content Include="Static\font-awesome\css\font-awesome.css" />
     <Content Include="Static\font-awesome\css\font-awesome.min.css" />
     <Content Include="Static\font-awesome\fonts\fontawesome-webfont.svg" />
@@ -306,7 +313,9 @@
     <Content Include="Views\Shared\_NavigationMenu.cshtml" />
     <Content Include="Views\ImageRightBlock\Index.cshtml" />
     <Content Include="Views\ImageLeftBlock\Index.cshtml" />
-    <Content Include="Views\Shared\EmployeeBlock.cshtml" />
+    <Content Include="Views\EmployeeBlock\Index.cshtml" />
+    <Content Include="Views\StandardPage\Index.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

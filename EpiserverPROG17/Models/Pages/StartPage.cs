@@ -2,6 +2,7 @@
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 using EPiServer.Web;
+using EpiserverPROG17.Models.Blocks;
 using System.ComponentModel.DataAnnotations;
 
 namespace EpiserverPROG17.Models.Pages
@@ -61,14 +62,6 @@ namespace EpiserverPROG17.Models.Pages
         [UIHint(UIHint.Image)]
         public virtual ContentReference PageImage { get; set; }
 
-        //    [CultureSpecific]
-        //    [Display(
-        //        Name = "Main body",
-        //        Description = "The main body will be shown in the main content area of the page, using the XHTML-editor you can insert for example text, images and tables.",
-        //        GroupName = SystemTabNames.Content,
-        //        Order = 1)]
-        //    public virtual XhtmlString MainBody { get; set; }
-
         [CultureSpecific]
         [Display(
             Name = "Main content area",
@@ -77,6 +70,12 @@ namespace EpiserverPROG17.Models.Pages
         [AllowedTypes(typeof(StandardPage), typeof(BlockData),
             typeof(ImageData), typeof(ContentFolder))]
         public virtual ContentArea MainContentArea { get; set; }
+
+        [Display(
+            Name = "Footer text",
+            GroupName = SystemTabNames.Content,
+            Order = 150)]
+        public virtual FooterBlock Footer { get; set; }
 
     }
 }

@@ -1,0 +1,26 @@
+﻿
+@using EpiserverPROG17.Models.Pages
+@model EpiserverPROG17.Models.Pages.StandardPage
+
+<head>
+    <link href="~/Static/css/site.css" rel="stylesheet" /> 
+</head>
+
+<div class="intro-header" style="background: url(@Url.ContentUrl(Model.PageImage)) no-repeat center center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                    <h1 @Html.EditAttributes(m => m.MetaTitle)>
+                        @(Model.MetaTitle ?? Model.Name)
+                    </h1>
+                    <p>@Model.MetaDescription</p>
+                    @Html.PropertyFor(m => m.MainContentArea)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
