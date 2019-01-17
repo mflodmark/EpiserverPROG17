@@ -220,7 +220,6 @@
     <Compile Include="Business\ExtensionMethods\HtmlHelperExtensions.cs" />
     <Compile Include="Business\ExtensionMethods\LayoutExtensionMethods.cs" />
     <Compile Include="Controllers\EmployeeBlockController.cs" />
-    <Compile Include="Controllers\FooterBlockController.cs" />
     <Compile Include="Controllers\ImageLeftBlockController.cs" />
     <Compile Include="Controllers\ImageRightBlockController.cs" />
     <Compile Include="Controllers\StandardPageController.cs" />
@@ -242,7 +241,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\Properties\" />
-    <Folder Include="Views\FooterBlock\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Static\css\bootstrap.css" />
