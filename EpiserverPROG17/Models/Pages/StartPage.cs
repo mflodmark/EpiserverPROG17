@@ -11,7 +11,7 @@ namespace EpiserverPROG17.Models.Pages
         GroupName = SiteGroupNames.Specialized,
         GUID = "088b0f68-e005-44d1-9cce-127af7c40c97",
         Description = "Used as start page")]
-    public class StartPage : PageData
+    public class StartPage : SitePageData
     {
         [CultureSpecific]
         [Display(

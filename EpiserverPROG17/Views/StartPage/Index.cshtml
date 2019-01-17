@@ -3,27 +3,29 @@
     ViewBag.Title = "Index";
 }
 
-@model EpiserverPROG17.Models.Pages.StartPage
+@model PageViewModel<EpiserverPROG17.Models.Pages.StartPage>
+@using EpiserverPROG17.Models.ViewModels;
+
 
 <!-- Header -->
 <a name="about"></a>
-<div class="intro-header" style="background: url(@Url.ContentUrl(Model.PageImage)) no-repeat center center">
+<div class="intro-header" style="background: url(@Url.ContentUrl(Model.CurrentPage.PageImage)) no-repeat center center">
     <div class="container">
 
         <div class="row">
             <div class="col-lg-12">
                 <div class="intro-message">
-                    <h1 @Html.EditAttributes(m => m.Heading)>
-                        @(Model.Heading ?? Model.Name)
+                    <h1 @Html.EditAttributes(m => m.CurrentPage.Heading)>
+                        @(Model.CurrentPage.Heading ?? Model.CurrentPage.Name)
                     </h1>
-                    <h3>@Html.DisplayFor(m => m.Description)</h3>
+                    <h3>@Html.DisplayFor(m => m.CurrentPage.Description)</h3>
                     <hr class="intro-divider">
                     <ul class="list-inline intro-social-buttons">
                         <li>
                             <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg">
                                 <i class="fa fa-twitter fa-fw"></i>
                                 <span class="network-name">
-                                    @Html.PropertyFor(m => m.TwitterLink)
+                                    @Html.PropertyFor(m => m.CurrentPage.TwitterLink)
                                 </span>
                             </a>
                         </li>
@@ -31,7 +33,7 @@
                             <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg">
                                 <i class="fa fa-github fa-fw"></i>
                                 <span class="network-name">
-                                    @Html.PropertyFor(m => m.GithubLink)
+                                    @Html.PropertyFor(m => m.CurrentPage.GithubLink)
                                 </span>
                             </a>
                         </li>
@@ -39,7 +41,7 @@
                             <a href="#" class="btn btn-default btn-lg">
                                 <i class="fa fa-linkedin fa-fw"></i>
                                 <span class="network-name">
-                                    @Html.PropertyFor(m => m.LinkedinLink)
+                                    @Html.PropertyFor(m => m.CurrentPage.LinkedinLink)
                                 </span>
                             </a>
                         </li>
@@ -54,4 +56,5 @@
 </div>
 <!-- /.intro-header -->
 
-@Html.PropertyFor(x => x.MainContentArea)
+@Html.PropertyFor( m => m.CurrentPage.MainContentArea,
+    new {CssClass = "row equal-height"})

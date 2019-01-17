@@ -1,0 +1,10 @@
+﻿@using EPiServer.Web.Mvc.Html
+@model EpiserverPROG17.Models.Media.ImageFile
+
+<div style="text-align:center">
+    <figure class="border">
+        <img src="@Url.ContentUrl(Model.ContentLink)" height="300" 
+             alt="@Model.Description" />
+        <figcaption>@Model.Description</figcaption>
+    </figure>
+</div> 

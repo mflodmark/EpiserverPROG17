@@ -330,6 +330,7 @@
     <Content Include="Views\ProductPage\Index.cshtml" />
     <Content Include="Views\ImagePage\Index.cshtml" />
     <Content Include="Views\ListingBlock\Index.cshtml" />
+    <Content Include="Views\Shared\ImageFile.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
