@@ -3,13 +3,13 @@
 @model EpiserverPROG17.Models.Pages.ImagePage
 
 <style>
-    image {
-        height: 100px;
-        width: 100px;
+    #image {
+        text-align: center;
     }
 </style>
 
-<div id="image" style="background: url(@Url.ContentUrl(Model.PageImage)) no-repeat center center">
+<div id="image">
+    <img  src="@Url.ContentUrl(Model.PageImage)" height="500">
 </div>
 
 
