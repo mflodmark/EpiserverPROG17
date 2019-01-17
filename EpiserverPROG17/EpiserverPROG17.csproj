@@ -216,12 +216,20 @@
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
+    <Compile Include="Business\DependencyResolvers\RegisterDependencyResolverInitializationModule.cs" />
+    <Compile Include="Business\DependencyResolvers\StructureMapDependencyResolver.cs" />
     <Compile Include="Business\ExtensionMethods\ContentExtensions.cs" />
     <Compile Include="Business\ExtensionMethods\HtmlHelperExtensions.cs" />
     <Compile Include="Business\ExtensionMethods\LayoutExtensionMethods.cs" />
+    <Compile Include="Business\ExtensionMethods\SectionExtensionMethods.cs" />
     <Compile Include="Controllers\EmployeeBlockController.cs" />
     <Compile Include="Controllers\ImageLeftBlockController.cs" />
+    <Compile Include="Controllers\ImagePageController.cs" />
     <Compile Include="Controllers\ImageRightBlockController.cs" />
+    <Compile Include="Controllers\ListingBlockController.cs" />
+    <Compile Include="Controllers\PageControllerBase.cs" />
+    <Compile Include="Controllers\ProductPageController.cs" />
+    <Compile Include="Controllers\ProductPagePartialController.cs" />
     <Compile Include="Controllers\StandardPageController.cs" />
     <Compile Include="Controllers\StartPageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -231,10 +239,16 @@
     <Compile Include="Models\Blocks\FooterBlock.cs" />
     <Compile Include="Models\Blocks\ImageLeftBlock.cs" />
     <Compile Include="Models\Blocks\ImageRightBlock.cs" />
+    <Compile Include="Models\Blocks\ListingBlock.cs" />
     <Compile Include="Models\Media\ImageFile.cs" />
+    <Compile Include="Models\Pages\ImagePage.cs" />
+    <Compile Include="Models\Pages\ProductPage.cs" />
     <Compile Include="Models\Pages\SitePageData.cs" />
     <Compile Include="Models\Pages\StandardPage.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
+    <Compile Include="Models\ViewModels\IPageViewModel.cs" />
+    <Compile Include="Models\ViewModels\ListingBlockViewModel.cs" />
+    <Compile Include="Models\ViewModels\PageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SiteGroupNames.cs" />
     <Compile Include="SiteTabNames.cs" />
@@ -314,6 +328,10 @@
     <Content Include="Views\EmployeeBlock\Index.cshtml" />
     <Content Include="Views\StandardPage\Index.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\ProductPage\Index.cshtml" />
+    <Content Include="Views\ImagePage\Index.cshtml" />
+    <Content Include="Views\ListingBlock\Index.cshtml" />
+    <Content Include="Views\ProductPagePartial\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

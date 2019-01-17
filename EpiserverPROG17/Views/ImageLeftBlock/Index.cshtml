@@ -12,11 +12,11 @@
                     <br>
                     @Html.DisplayFor(x => x.Heading2)
                 </h2>
-                @Html.PropertyFor(x => x.Text, new { CssClass = "lead" })
-                <a target="_blank" href="@Url.ContentUrl(Model.Link)">
+                @Html.PropertyFor(x => x.Text, null, new { @class = "lead" })
+                <a class="lead" target="_blank" href="@Url.ContentUrl(Model.Link)">
                     @Html.DisplayFor(x => x.LinkText)
                 </a>
-                @Html.PropertyFor(x => x.Text2, new { CssClass = "lead" })
+                @Html.PropertyFor(x => x.Text2, null, new { @class = "lead" })
             </div>
             <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                 <img class="img-responsive" src="@Url.ContentUrl(Model.Image)" alt="">

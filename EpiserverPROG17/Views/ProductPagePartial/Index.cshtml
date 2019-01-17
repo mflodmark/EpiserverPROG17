@@ -1,0 +1,27 @@
+﻿
+@model PageViewModel<EpiserverPROG17.Models.Pages.ProductPage>
+@using EpiserverPROG17.Models.ViewModels;
+<style>
+    .intro-message {
+        padding-top: 0%;
+    }
+</style>
+
+<div class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                    <h1 @Html.EditAttributes(m => m.CurrentPage.Header)>
+                        @Html.EditAttributes(m => m.CurrentPage.Header)
+                    </h1>
+                    @Html.PropertyFor( m => m.CurrentPage.MainContentArea,
+                        new {CssClass = "row equal-height"})
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

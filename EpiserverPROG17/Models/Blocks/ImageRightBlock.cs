@@ -42,6 +42,7 @@ namespace EpiserverPROG17.Models.Blocks
         [Display(Name = "Image", Order = 60, GroupName = SystemTabNames.PageHeader)]
         [UIHint(UIHint.Image)]
         public virtual ContentReference Image { get; set; }
+
     }
 }
 

@@ -1,0 +1,35 @@
+﻿@*@using EpiserverPROG17.Models.ViewModels
+@using EpiserverPROG17.Models.Pages
+@model PageViewModel<ProductPage>
+<div class="block span4">
+    <div class="border">
+        <p>Markus</p>
+    </div>
+</div>*@
+
+@using EpiserverPROG17.Models.ViewModels
+@using EpiserverPROG17.Models.Pages
+@model PageViewModel<ProductPage>
+
+<style>
+    .intro-message {
+        padding-top: 0%;
+        color: black;
+    }
+</style>
+
+<div class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                    <h1 @Html.EditAttributes(m => m.CurrentPage.Header)>
+                        @Html.DisplayFor(m => m.CurrentPage.Header)
+                    </h1>
+                    @Html.PropertyFor(m => m.CurrentPage.MainContentArea)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
